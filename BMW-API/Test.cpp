@@ -4,9 +4,7 @@
 
 int main(int argc, char** argv) {
     cpr::Response r = cpr::Get(cpr::Url{"https://api.github.com/repos/whoshuu/cpr/contributors"},
-                               cpr::Authentication{"user", "pass"},
-                               cpr::Parameters{{"anon", "true"},
-                                               {"key",  "value"}});
+                               cpr::Authentication{"user", "pass"});
     std::cout << "Status code: " << r.status_code << '\n';
     std::cout << "Text: " << r.text << '\n';
     return 0;
