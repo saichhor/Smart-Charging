@@ -8,3 +8,15 @@
 - HTTP-Request on Test-API
 - Read the documentation and made simple requests
 - Studied the Loxone api
+
+## 18.07.2022
+- Noticed that we had not to do the "Setting up a connection" task
+  under the Link: <br /> 
+  https://www.loxone.com/dede/wp-content/uploads/sites/2/2022/06/1300_Communicating-with-the-Miniserver.pdf
+  <br />
+  We started to take a cloer look into the Loxone "lxcommunicator" Folders <br />
+  that we downloaded from GitHub under: <br />
+  https://github.com/Loxone/lxcommunicator <br/>
+  We made the steps under this Link. Before we had to download "node.js" for Windows to use it in CLion. <br />
+  https://nodejs.org/en/download/
+-
