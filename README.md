@@ -19,4 +19,6 @@
   https://github.com/Loxone/lxcommunicator <br/>
   We made the steps under this Link. Before we had to download "node.js" for Windows to use it in CLion. <br />
   https://nodejs.org/en/download/
--
+- Im nächsten Schritt beschäftigten wir uns damit, wo wir die URL im Testbeispiel angeben.
+  <br /> Nach längerem suchen fanden wir es dann in der "index.js" im Testordner auf Zeile 67.
+  <br /> Dort haben wir dann die URl auf den Hostnamen des Miniservers geändert "ms40a7".

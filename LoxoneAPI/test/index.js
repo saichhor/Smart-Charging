@@ -64,7 +64,7 @@ config.delegate = delegateObj;
 var socket = new LxCommunicator.WebSocket(config);
 
 // Open a Websocket connection to a miniserver by just providing the host, username and password!
-socket.open("testminiserver.loxone.com:7777", "app", "LoxLIVEpasswordTest").then(function() {
+socket.open("ms40a7", "app", "LoxLIVEpasswordTest").then(function() {
     // Send a command, handle the response as you wish
     socket.send("jdev/sps/enablebinstatusupdate").then(function(respons) {
         console.log("Successfully executed '" + respons.LL.control + "' with code " + respons.LL.Code + " and value " + respons.LL.value);
