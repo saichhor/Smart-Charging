@@ -21,4 +21,5 @@
   https://nodejs.org/en/download/
 - Im nächsten Schritt beschäftigten wir uns damit, wo wir die URL im Testbeispiel angeben.
   <br /> Nach längerem suchen fanden wir es dann in der "index.js" im Testordner auf Zeile 67.
-  <br /> Dort haben wir dann die URl auf den Hostnamen des Miniservers geändert "ms40a7".
+  <br /> Dort haben wir dann die URl auf den Hostnamen geändert und den Benutzernamen und das Passwort
+  das des Miniservers.
