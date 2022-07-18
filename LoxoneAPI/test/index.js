@@ -1,4 +1,7 @@
 //=== Node.js only ===
+
+var LxCommunicator = require('lxcommunicator');
+
 // Lets require and assign LxCommunicator if the global LxCommunicator object doesn't exist yet (Node.js)
 if (typeof LxCommunicator === 'undefined') {
     global.LxCommunicator = require('../LxCommunicator');
