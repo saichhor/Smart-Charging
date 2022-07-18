@@ -6,3 +6,5 @@
 
 ## 15.7.2022
 - HTTP-Request on Test-API
+- Read the documentation and made simple requests
+- Studied the Loxone api
