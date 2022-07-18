@@ -27,5 +27,6 @@
   should do. We found out that the "lxcommunicator" is superfluous there
   For starters, we only send data from Aichhorn to its BMW cloud connection via a simple
   HTTPS request should be sent to a digital input (in the Loxone Config). <br />
-- Structure of the HTTPS request: "https://[host+port]/jdev/sps/io/[name]/[value]"
-- 
+>- Request:<br>https://[host+port]/jdev/sps/io/[name]/[value]
+- The next step is to add a few digital inputs to the Loxone Conf. and to simulate 
+  the charge level and the remaining range
