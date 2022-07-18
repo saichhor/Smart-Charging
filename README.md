@@ -19,7 +19,14 @@
   https://github.com/Loxone/lxcommunicator <br/>
   We made the steps under this Link. Before we had to download "node.js" for Windows to use it in CLion. <br />
   https://nodejs.org/en/download/
-- Im nächsten Schritt beschäftigten wir uns damit, wo wir die URL im Testbeispiel angeben.
-  <br /> Nach längerem suchen fanden wir es dann in der "index.js" im Testordner auf Zeile 67.
-  <br /> Dort haben wir dann die URl auf den Hostnamen geändert und den Benutzernamen und das Passwort
-  das des Miniservers.
+- In the next step we dealt with where we put the URL in the test example.
+  <br /> After a long search we found it in the "index.js" in the test folder on line 67.
+  <br /> There we then changed the URl to the hostname and the username and password
+  that of the mini server.
+- We talked to an internal software developer how best to do it now
+  should do. We found out that the "lxcommunicator" is superfluous there
+  For starters, we only send data from Aichhorn to its BMW cloud connection via a simple
+  HTTPS request should be sent to a digital input (in the Loxone Config). <br />
+>- Request:<br>https://[host+port]/jdev/sps/io/[name]/[value]
+- The next step is to add a few digital inputs to the Loxone Conf. and to simulate 
+  the charge level and the remaining range
