@@ -39,4 +39,7 @@
   to set his value.
 
 ## 19.07.2022
-- sdadasd
+- We tried to get a connection, with the link mentioned above, in postman.
+  <br /> The result: we got a 403 code which means:
+  <br /> "403 Forbidden, if the element exists, but your user has no access (Loxone user permissions)"
+- We tried to figure it out, we did not manage it until yet.
