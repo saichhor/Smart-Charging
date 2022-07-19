@@ -30,3 +30,8 @@
 >- Request:<br>https://[host+port]/jdev/sps/io/[name]/[value]
 - The next step is to add a few digital inputs to the Loxone Conf. and to simulate 
   the charge level and the remaining range
+- We made a new site in the loxone config and added a digital input that we named "Akkustand"
+  <br /> which shows the percentage of the battery as a slider.
+- We made a new folder named "communicationWithServer" in which we (task we have to
+  do today or tomorrow) send a HTTPS-Request, as shown above, to the digital input
+  to set his value.
