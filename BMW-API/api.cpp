@@ -3,7 +3,7 @@
 #include <memory>
 #include <string>
 #include <curl/curl.h>
-#include <json/json.h>
+#include <jsoncpp/json/json.h>
 
 namespace
 {
