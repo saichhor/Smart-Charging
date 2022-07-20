@@ -43,3 +43,7 @@
   <br /> The result: we got a 403 code which means:
   <br /> "403 Forbidden, if the element exists, but your user has no access (Loxone user permissions)"
 - We tried to figure it out, we did not manage it until yet.
+
+## 20.07.2022
+- We started to test the link "https://dns.loxonecloud.com/[seriennummer]/jdev/sps/io/Akkustand/75" <br />
+  in a browser but we got the error "excess on dns.loxonecloud.com was denied".
