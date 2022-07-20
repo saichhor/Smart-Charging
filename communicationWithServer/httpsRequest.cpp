@@ -16,7 +16,7 @@ curlpp::Cleanup myCleanup;
 // Here I use a shortcut to get it in a string stream ...
 
 std::ostringstream os;
-os << curlpp::options::Url(std::string("https://[serverhost]/jdev/sps/io/[nameDesEingangs]/[wert]"));
+os << curlpp::options::Url(std::string("https://dns.loxonecloud.com/504F94A0EC9E/jdev/sps/io/Akkustand/75"));
 
 string asAskedInQuestion = os.str();
 
