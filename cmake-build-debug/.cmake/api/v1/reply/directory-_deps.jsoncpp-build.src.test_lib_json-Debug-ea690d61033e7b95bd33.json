@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "_deps/jsoncpp-build/src/test_lib_json",
+		"source" : "cmake-build-debug/_deps/jsoncpp-src/src/test_lib_json"
+	}
+}

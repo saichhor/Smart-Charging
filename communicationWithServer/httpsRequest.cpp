@@ -1,23 +1,34 @@
-//
-// Created by Stefan on 18.07.2022.
-//
+#include <cstdio>
+#include "../cmake-build-debug/_deps/curl-src/include/curl/curl.h"
 
-// Edit : rewritten for cURLpp 0.7.3
-// Note : namespace changed, was cURLpp in 0.7.2 ...
+int main(void)
+{
+    CURL *curl;
+    CURLcode res;
 
-#include <curlpp/cURLpp.hpp>
-#include <curlpp/Options.hpp>
+    /* In windows, this will init the winsock stuff */
+    curl_global_init(CURL_GLOBAL_ALL);
 
-// RAII cleanup
+    /* get a curl handle */
+    curl = curl_easy_init();
+    if(curl) {
+        /* First set the URL that is about to receive our POST. This URL can
+           just as well be a https:// URL if that is what should receive the
+           data. */
+        curl_easy_setopt(curl, CURLOPT_URL, "https://dns.loxonecloud.com/504F94A0EC9E/jdev/sps/io/Akkustand/75");
+        /* Now specify the POST data */
+        curl_easy_setopt(curl, CURLOPT_POSTFIELDS, "name=daniel&project=curl");
 
-curlpp::Cleanup myCleanup;
+        /* Perform the request, res will get the return code */
+        res = curl_easy_perform(curl);
+        /* Check for errors */
+        if(res != CURLE_OK)
+            fprintf(stderr, "curl_easy_perform() failed: %s\n",
+                    curl_easy_strerror(res));
 
-// Send request and get a result.
-// Here I use a shortcut to get it in a string stream ...
-
-std::ostringstream os;
-os << curlpp::options::Url(std::string("https://dns.loxonecloud.com/504F94A0EC9E/jdev/sps/io/Akkustand/75"));
-
-string asAskedInQuestion = os.str();
-
-#include "httpsRequest.h"
+        /* always cleanup */
+        curl_easy_cleanup(curl);
+    }
+    curl_global_cleanup();
+    return 0;
+}

@@ -23,5 +23,11 @@ endif()
 
 FetchContent_MakeAvailable(curl)
 
-add_executable(smart-charging_BMW
-        BMW-API/api.cpp)
+add_executable(
+        smart-charging_BMW
+        BMW-API/api.cpp
+)
+add_executable(
+        smart-charging_loxone
+        communicationWithServer/httpsRequest.cpp
+)

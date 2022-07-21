@@ -60,3 +60,6 @@
   <br /> named "Akkustand" got the value 75 which I sent in the url.
 - Responde from the browser: {"LL": { "control": "dev/sps/io/Akkustand/75", "value": "75.000", "Code": "200"}}
   <br /> --> IT WORKS!!!
+
+## 21.07.2022
+- 

@@ -1,0 +1,3 @@
+D:/Loxone/Projekte/Smart-Charging/cmake-build-debug/_deps/curl-subbuild/CMakeFiles/curl-populate.dir
+D:/Loxone/Projekte/Smart-Charging/cmake-build-debug/_deps/curl-subbuild/CMakeFiles/edit_cache.dir
+D:/Loxone/Projekte/Smart-Charging/cmake-build-debug/_deps/curl-subbuild/CMakeFiles/rebuild_cache.dir

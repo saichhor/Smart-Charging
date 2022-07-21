@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "_deps/jsoncpp-build/src/jsontestrunner",
+		"source" : "cmake-build-debug/_deps/jsoncpp-src/src/jsontestrunner"
+	}
+}

@@ -1,0 +1,21 @@
+# ninja log v5
+0	296	6800924855968810	curl-populate-prefix/src/curl-populate-stamp/curl-populate-mkdir	343f02c7e8befb2d
+0	296	6800924855968810	D:/Loxone/Projekte/Smart-Charging/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-mkdir	343f02c7e8befb2d
+296	14481	6800924997827612	curl-populate-prefix/src/curl-populate-stamp/curl-populate-download	5437dd01889b3faa
+296	14481	6800924997827612	D:/Loxone/Projekte/Smart-Charging/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-download	5437dd01889b3faa
+14481	16544	0	curl-populate-prefix/src/curl-populate-stamp/curl-populate-update	ac789e12e8993795
+14481	16544	0	D:/Loxone/Projekte/Smart-Charging/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-update	ac789e12e8993795
+16544	16627	6800925019278702	curl-populate-prefix/src/curl-populate-stamp/curl-populate-patch	10e7026c2b87c577
+16544	16627	6800925019278702	D:/Loxone/Projekte/Smart-Charging/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-patch	10e7026c2b87c577
+16627	16708	6800925020098697	curl-populate-prefix/src/curl-populate-stamp/curl-populate-configure	9760195710d32194
+16627	16708	6800925020098697	D:/Loxone/Projekte/Smart-Charging/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-configure	9760195710d32194
+16708	16788	6800925020888698	curl-populate-prefix/src/curl-populate-stamp/curl-populate-build	c776ad186d54f60c
+16708	16788	6800925020888698	D:/Loxone/Projekte/Smart-Charging/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-build	c776ad186d54f60c
+16788	16871	6800925021718692	curl-populate-prefix/src/curl-populate-stamp/curl-populate-install	58f811bc4f08a7ae
+16788	16871	6800925021718692	D:/Loxone/Projekte/Smart-Charging/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-install	58f811bc4f08a7ae
+16871	16952	6800925022538695	curl-populate-prefix/src/curl-populate-stamp/curl-populate-test	8057e5d218f704aa
+16871	16952	6800925022538695	D:/Loxone/Projekte/Smart-Charging/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-test	8057e5d218f704aa
+16952	17066	6800925023678696	CMakeFiles/curl-populate-complete	286e35e8a23bdb46
+16952	17066	6800925023678696	curl-populate-prefix/src/curl-populate-stamp/curl-populate-done	286e35e8a23bdb46
+16952	17066	6800925023678696	D:/Loxone/Projekte/Smart-Charging/cmake-build-debug/_deps/curl-subbuild/CMakeFiles/curl-populate-complete	286e35e8a23bdb46
+16952	17066	6800925023678696	D:/Loxone/Projekte/Smart-Charging/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-done	286e35e8a23bdb46

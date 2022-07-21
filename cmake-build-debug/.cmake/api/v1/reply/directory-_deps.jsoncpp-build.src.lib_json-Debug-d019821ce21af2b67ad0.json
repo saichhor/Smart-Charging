@@ -1,0 +1,93 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"cmake-build-debug/_deps/jsoncpp-src/src/lib_json/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 202,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libjsoncpp.dll.a"
+			],
+			"targetId" : "jsoncpp_lib::@73fdddb0eb7ed205e753",
+			"targetIndex" : 30,
+			"targetIsImportLibrary" : true,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"bin/libjsoncpp.dll"
+			],
+			"targetId" : "jsoncpp_lib::@73fdddb0eb7ed205e753",
+			"targetIndex" : 30,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libjsoncpp.a"
+			],
+			"targetId" : "jsoncpp_static::@73fdddb0eb7ed205e753",
+			"targetIndex" : 33,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				{
+					"from" : "_deps/jsoncpp-build/src/lib_json/CMakeFiles/jsoncpp_object.dir/.//json_reader.cpp.obj",
+					"to" : "objects-Debug/jsoncpp_object/json_reader.cpp.obj"
+				},
+				{
+					"from" : "_deps/jsoncpp-build/src/lib_json/CMakeFiles/jsoncpp_object.dir/.//json_value.cpp.obj",
+					"to" : "objects-Debug/jsoncpp_object/json_value.cpp.obj"
+				},
+				{
+					"from" : "_deps/jsoncpp-build/src/lib_json/CMakeFiles/jsoncpp_object.dir/.//json_writer.cpp.obj",
+					"to" : "objects-Debug/jsoncpp_object/json_writer.cpp.obj"
+				}
+			],
+			"targetId" : "jsoncpp_object::@73fdddb0eb7ed205e753",
+			"targetIndex" : 31,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "_deps/jsoncpp-build/src/lib_json",
+		"source" : "cmake-build-debug/_deps/jsoncpp-src/src/lib_json"
+	}
+}
