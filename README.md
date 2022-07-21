@@ -49,7 +49,7 @@
   in a browser, but we got the error "excess on dns.loxonecloud.com was denied".
 - After talking with an external employee we found the problem.
   <br /> As expected our miniserver was not registered. To activate CloudDNS at Loxone <br />
-  you <b>HAVE TO!!!<\b> register your miniserver on their website. <br />
+  you <b>HAVE TO!!!</b> register your miniserver on their website. <br />
   --> after that you get automatically access to it and you can communicate with the link 
   mentioned above
 - I tried it with the link mentioned above. 
@@ -62,4 +62,11 @@
   <br /> --> IT WORKS!!!
 
 ## 21.07.2022
-- 
+- In school Mr. Tarta and Spahr tried to build a connection with the miniserver.
+  They tried so many things but could not get a connection. They had to change the location.
+  Meanwhile Mr. Aichhorn tried to implement some methods with which you can run a c++ application.
+  He tried so many things but at the end it does not work. He spoke with our internal supervisor
+  and now we can make it in Java. For the communication with the server, in Java, we made a new project
+  loaded our old one from GitHub und made a new folder called "communicationWithServerJAVAVersion"
+  in which we send a https-request to the server. We are also trying to send our login values
+  within the url so we do not have to login manually anymore.
