@@ -70,3 +70,7 @@
   loaded our old one from GitHub und made a new folder called "communicationWithServerJAVAVersion"
   in which we send a https-request to the server. We are also trying to send our login values
   within the url so we do not have to login manually anymore.
+- Current status <b>NOW</b> httpsRequest.js puts out a html report.
+- Now it says us a 401 code as expected because we have to authorize our self with the username
+  and the password but we still do not know how to send them with the url in the correct way
+  so the browser does not ask us anymore.
