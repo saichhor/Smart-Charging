@@ -49,7 +49,7 @@
   in a browser, but we got the error "excess on dns.loxonecloud.com was denied".
 - After talking with an external employee we found the problem.
   <br /> As expected our miniserver was not registered. To activate CloudDNS at Loxone <br />
-  you HAVE TO!!! register your miniserver on their website. <br />
+  you <b>HAVE TO!!!<\b> register your miniserver on their website. <br />
   --> after that you get automatically access to it and you can communicate with the link 
   mentioned above
 - I tried it with the link mentioned above. 
@@ -58,8 +58,9 @@
   <br /> in the config in the "external connection"-section to "connection with REMOTE CONTROLL"
   <br /> I got asked in the browser to please enter my username and password and suddenly the slider
   <br /> named "Akkustand" got the value 75 which I sent in the url.
-- Responde from the browser: {"LL": { "control": "dev/sps/io/Akkustand/75", "value": "75.000", "Code": "200"}}
+>- Responde from the browser: <br>{"LL": { "control": "dev/sps/io/Akkustand/75", "value": "75.000", "Code": "200"}}
   <br /> --> IT WORKS!!!
 
 ## 21.07.2022
-- 
+
+
