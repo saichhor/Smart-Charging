@@ -90,3 +90,5 @@
 - The result: --> <b>It works perfectly</b>
   <br> The battery level changes on the app and we do not have to type in the
   authentication information anymore. Everything runs automatically.
+>-If we did not mentioned it to get the green run symbol in IntelliJ you have to
+  run it first in the "Terminal": <br/><b>node httpsRequest.js</b>
