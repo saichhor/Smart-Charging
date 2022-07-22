@@ -85,3 +85,8 @@
   3. Follow Authorization Header
 - Then we have to go to the "Authorization" section and set the "Type" to "Basic Auth".
   <br> --> Now we can set username and a password.
+- After a little-bit of searching I found some code on stackoverflow to send
+  the username and the password within the header of the request.
+- The result: --> <b>It works perfectly</b>
+  <br> The battery level changes on the app and we do not have to type in the
+  authentication information anymore. Everything runs automatically.
