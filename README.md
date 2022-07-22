@@ -74,3 +74,14 @@
 - Now it says us a 401 code as expected because we have to authorize our self with the username
   and the password but we still do not know how to send them with the url in the correct way
   so the browser does not ask us anymore.
+
+## 22.07.2022
+- In the morning we got a new message from our internal supervisor because of the problem
+  with the authentication on the miniserver.
+- To get this going we have to do activate the following things in the "Settings"
+  section, under the url of the request:
+  1. Automatically follow redirects
+  2. Follow original HTTP-Method
+  3. Follow Authorization Header
+- Then we have to go to the "Authorization" section and set the "Type" to "Basic Auth".
+  <br> --> Now we can set username and a password.
