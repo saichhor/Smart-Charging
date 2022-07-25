@@ -70,3 +70,36 @@
   loaded our old one from GitHub und made a new folder called "communicationWithServerJAVAVersion"
   in which we send a https-request to the server. We are also trying to send our login values
   within the url so we do not have to login manually anymore.
+- Current status <b>NOW</b> httpsRequest.js puts out a html report.
+- Now it says us a 401 code as expected because we have to authorize our self with the username
+  and the password but we still do not know how to send them with the url in the correct way
+  so the browser does not ask us anymore.
+
+## 22.07.2022
+- In the morning we got a new message from our internal supervisor because of the problem
+  with the authentication on the miniserver.
+- To get this going we have to do activate the following things in the "Settings"
+  section, under the url of the request:
+  1. Automatically follow redirects
+  2. Follow original HTTP-Method
+  3. Follow Authorization Header
+- Then we have to go to the "Authorization" section and set the "Type" to "Basic Auth".
+  <br> --> Now we can set username and a password.
+- After a little-bit of searching I found some code on stackoverflow to send
+  the username and the password within the header of the request.
+- The result: --> <b>It works perfectly</b>
+  <br> The battery level changes on the app and we do not have to type in the
+  authentication information anymore. Everything runs automatically.
+>-If we did not mentioned it to get the green run symbol in IntelliJ you have to
+  run it first in the "Terminal": <br/><b>node httpsRequest.js</b>
+
+## 25.07.2022
+- We updated the project into our Clion folder. To run the Java-Version there you
+  have to go into the terminal and download the "xhr2"-package with "npm install xhr2"
+  now you have to go into the Java-version folder with "cd communicationWithServerJAVAVersion".
+  <br> --> now you can run it with "node httpsRequest.js".
+- We started to implement the BMW CarData into our program to see if we can load
+  the data from a test vehicle from BMW.
+- We put the https-request-code into a function called <b>"setBatteryLevel([value])"</b>.
+- we tried to execute the function with an interval of one second each time starting from
+  zero to one hundred with a value increased by 1.
