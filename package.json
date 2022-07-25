@@ -4,5 +4,5 @@
     "node-fetch": "^2.6.7",
     "xhr2": "^0.2.1"
   },
-  "type": "commonjs"
+  "type": "module"
 }

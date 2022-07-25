@@ -103,7 +103,7 @@
 - We put the https-request-code into a function called <b>"setBatteryLevel([value])"</b>.
 - we tried to execute the function with an interval of one second each time starting from
   zero to one hundred with a value increased by 1.
-- Now after updating the project I got a message in the first row of my program called
+- Now after updating the project I got a message in the first line of my program called
   <b>"require is not defined"</b>. 
 - I searched on Google and found these three ways on a website:
   <br> "https://learn.coderslang.com/0021-nodejs-require-is-not-defined-error/"
@@ -114,5 +114,10 @@
   3. Change the require to import:
      <br>// const express = require('express');
      <br>import express from 'express';
-- We chose the first one. <br> --> It worked!
+- We had to choose the <b>third</b> method because with the first one the "api.js"-File
+  in the "BMW-API"-folder would not work.
+  <br> We had to change the first line in the "httpsRequest.js"-File in the
+  "communicationWithTheServerJAVAVersion"-folder:
+  <br> From: "<b>var XMLHttpRequest = require('xhr2');</b>"
+  <br> To: "<b>import XMLHttpRequest from 'xhr2';</b>"
 - 

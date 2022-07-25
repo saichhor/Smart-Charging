@@ -1,4 +1,4 @@
-var XMLHttpRequest = require('xhr2');
+import XMLHttpRequest from 'xhr2';
 var request = new XMLHttpRequest();
 
 var userName = "Experte";
