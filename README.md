@@ -120,4 +120,7 @@
   "communicationWithTheServerJAVAVersion"-folder:
   <br> From: "<b>var XMLHttpRequest = require('xhr2');</b>"
   <br> To: "<b>import XMLHttpRequest from 'xhr2';</b>"
-- 
+- We found two BMW apis, one coming from BMW and another one uploaded to Github by a user. 
+  For marketing reasons we had to choose the api made by BMW. The big disadvantage of the 
+  BMW api is that it is chargeable and we need an account. So that we can create this, we 
+  need the UID, which we will only receive after consultation with our supervisor.
