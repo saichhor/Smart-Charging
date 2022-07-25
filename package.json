@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "lxcommunicator": "^1.1.1",
     "xhr2": "^0.2.1"
   }
 }
