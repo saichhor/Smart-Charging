@@ -92,3 +92,14 @@
   authentication information anymore. Everything runs automatically.
 >-If we did not mentioned it to get the green run symbol in IntelliJ you have to
   run it first in the "Terminal": <br/><b>node httpsRequest.js</b>
+
+## 25.07.2022
+- We updated the project into our Clion folder. To run the Java-Version there you
+  have to go into the terminal and download the "xhr2"-package with "npm install xhr2"
+  now you have to go into the Java-version folder with "cd communicationWithServerJAVAVersion".
+  <br> --> now you can run it with "node httpsRequest.js".
+- We started to implement the BMW CarData into our program to see if we can load
+  the data from a test vehicle from BMW.
+- We put the https-request-code into a function called <b>"setBatteryLevel([value])"</b>.
+- we tried to execute the function with an interval of one second each time starting from
+  zero to one hundred with a value increased by 1.
