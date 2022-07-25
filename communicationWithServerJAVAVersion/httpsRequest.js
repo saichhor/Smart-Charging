@@ -14,19 +14,22 @@ function authenticateUser(user, password)
 }
 
 function setBatteryLevel(value){
+    var ausgabetext = "";
+
     request.open("GET", "https://dns.loxonecloud.com/504F94A0EC9E/jdev/sps/io/Akkustand/" + value.toString());
     request.setRequestHeader("Authorization", authenticateUser(userName, passWord));
     request.addEventListener('load', function (event) {
          if (request.status >= 200 && request.status < 300) {
-             console.log(request.responseText);
+             ausgabetext = request.responseText.toString();
          } else {
-             console.warn(request.statusText, request.responseText);
+             ausgabetext = request.statusText.toString() + " - " + request.responseText.toString();
          }
 
     });
     request.send();
+    return ausgabetext;
 }
 
-for (i = 0; i <= 100; ++i) {
-    setBatteryLevel(i);
+for (i = 0; i <= 100; i++) {
+    setTimeout(setBatteryLevel(i), 1000);
 }

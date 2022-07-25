@@ -103,3 +103,16 @@
 - We put the https-request-code into a function called <b>"setBatteryLevel([value])"</b>.
 - we tried to execute the function with an interval of one second each time starting from
   zero to one hundred with a value increased by 1.
+- Now after updating the project I got a message in the first row of my program called
+  <b>"require is not defined"</b>. 
+- I searched on Google and found these three ways on a website:
+  <br> "https://learn.coderslang.com/0021-nodejs-require-is-not-defined-error/"
+- <b>Solution:</b>
+  <br>To get rid of the error require is not defined in Node.js you can do 3 things:
+- 1. Change the type of modules in package.json to commonjs: <br>"type": "commonjs"
+  2. Delete the string "type": "module" from the file package.json
+  3. Change the require to import:
+     <br>// const express = require('express');
+     <br>import express from 'express';
+- We chose the first one. <br> --> It worked!
+- 
