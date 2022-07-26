@@ -139,4 +139,7 @@
   identify number from your vehicle).
 - We made a new .js-File in which we try to make the tutorial from the bmw-connecteddrive-api.
   <br> https://bmwapi.mihaiblaga.dev/ (Link for the usage of it)
+- We had to install the "@mihaiblaga89/bmw-connecteddrive-api" into the "package.json"-File
+  to get the import working. (Click on it and then click Alt+Enter, select the .json-File you
+  want, done).
 - 
