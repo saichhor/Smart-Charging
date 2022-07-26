@@ -137,4 +137,6 @@
   <br> There you have to make a new account and then you can create a test vehicle.
   <br> The reason is that you need the VID from your car (thats something like your
   identify number from your vehicle).
+- We made a new .js-File in which we try to make the tutorial from the bmw-connecteddrive-api.
+  <br> https://bmwapi.mihaiblaga.dev/ (Link for the usage of it)
 - 
