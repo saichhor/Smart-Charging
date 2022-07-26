@@ -126,4 +126,15 @@
   need the UID, which we will only receive after consultation with our supervisor.
 
 ## 26.07.2022
+- We startetd downloading the BMW-i-remote software from GitHub. Reason why we do not use the origina
+  one from BMW is that you need to buy it and pay for it. The GitHub versions are free
+  to use.
+- There are two versions:
+  <br> 1. https://github.com/mihaiblaga89/bmw-connecteddrive-api (JavaScript-version)
+  <br> 2. https://github.com/edent/BMW-i-Remote#get-vehicle-data (Python-version)
+- If you want to make a test vehicle you need to download the "my-BMW"-app:
+  <br> https://apps.apple.com/fi/app/my-bmw/id1519034860
+  <br> There you have to make a new account and then you can create a test vehicle.
+  <br> The reason is that you need the VID from your car (thats something like your
+  identify number from your vehicle).
 - 

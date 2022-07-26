@@ -1,0 +1,69 @@
+{
+    "name": "@mihaiblaga89/bmw-connecteddrive-api",
+    "version": "0.5.4",
+    "description": "BMW ConnectedDrive API JS implementation",
+    "main": "dist/index.js",
+    "scripts": {
+        "test": "jest",
+        "build": "rollup -c",
+        "watch": "npx babel src --watch --out-dir dist"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mihaiblaga89/bmw-connecteddrive-api.git"
+    },
+    "files": [
+        "/dist"
+    ],
+    "keywords": [
+        "bmw",
+        "connecteddrive",
+        "api",
+        "bmw-connecteddrive"
+    ],
+    "author": "Mihai Blaga <mihaiblaga89@gmail.com> (https://www.mihaiblaga.dev)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/mihaiblaga89/bmw-connecteddrive-api/issues"
+    },
+    "homepage": "https://github.com/mihaiblaga89/bmw-connecteddrive-api#readme",
+    "dependencies": {
+        "axios": "0.27.2",
+        "axios-retry": "^3.3.1",
+        "moment": "^2.29.4",
+        "querystring": "^0.2.1"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.18.9",
+        "@babel/core": "^7.18.9",
+        "@babel/node": "^7.18.9",
+        "@babel/preset-env": "^7.18.9",
+        "babel-polyfill": "^6.26.0",
+        "eslint": "^7.32.0",
+        "eslint-config-airbnb-base": "^14.2.1",
+        "eslint-config-prettier": "^6.15.0",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-jest": "^23.20.0",
+        "eslint-plugin-prettier": "^3.4.1",
+        "husky": "^4.3.8",
+        "jest": "^26.6.3",
+        "jest-mock-axios": "^4.6.1",
+        "prettier": "^2.7.1",
+        "pretty-quick": "^3.1.3",
+        "rollup": "^2.77.0",
+        "rollup-plugin-commonjs": "^10.1.0",
+        "rollup-plugin-node-resolve": "^5.2.0",
+        "rollup-plugin-terser": "^7.0.2"
+    },
+    "jest": {
+        "collectCoverage": true,
+        "setupFiles": [
+            "<rootDir>/jest.init.js"
+        ]
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "yarn test && docma && git add -A && pretty-quick --staged"
+        }
+    }
+}
