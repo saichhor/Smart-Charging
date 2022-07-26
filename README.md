@@ -142,4 +142,4 @@
 - We had to install the "@mihaiblaga89/bmw-connecteddrive-api" into the "package.json"-File
   to get the import working. (Click on it and then click Alt+Enter, select the .json-File you
   want, done).
-- 
+- ERROR at initializing the API

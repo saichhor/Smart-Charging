@@ -1,11 +1,12 @@
+/* eslint-disable no-console */
 import API from '@mihaiblaga89/bmw-connecteddrive-api';
 
 await API.init({
     region: 'eu',
-    username: '[email protected]',
-    password: 'mySuperPassword',
+    username: 'aichhorn.stif@gmail.com',
+    password: 'netfoX-roxxuc-3tabqi',
+    debug: true,
 });
 
-const vehicles = await API.getVehicles();
-
-const vehicleStatus = await vehicles[0].getStatus();
+const currentVehicles = await API.getVehicles();
+console.log('currentVehicles', currentVehicles);
