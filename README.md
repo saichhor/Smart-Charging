@@ -135,11 +135,11 @@
 - If you want to make a test vehicle you need to download the "my-BMW"-app:
   <br> https://apps.apple.com/fi/app/my-bmw/id1519034860
   <br> There you have to make a new account and then you can create a test vehicle.
-  <br> The reason is that you need the VID from your car (thats something like your
+  <br> The reason is that you need the VIN from your car (thats something like your
   identify number from your vehicle).
 - We made a new .js-File in which we try to make the tutorial from the bmw-connecteddrive-api.
   <br> https://bmwapi.mihaiblaga.dev/ (Link for the usage of it)
 - We had to install the "@mihaiblaga89/bmw-connecteddrive-api" into the "package.json"-File
   to get the import working. (Click on it and then click Alt+Enter, select the .json-File you
   want, done).
-- ERROR at initializing the API
+- ERROR at initializing the API:
