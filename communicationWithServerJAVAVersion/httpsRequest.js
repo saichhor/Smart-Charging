@@ -19,8 +19,10 @@ function setBatteryLevel(value){
     request.addEventListener('load', function (event) {
          if (request.status >= 200 && request.status < 300) {
              console.log(request.responseText);
+             process.exit(1);
          } else {
              console.warn(request.statusText, request.responseText);
+             process.exit(1);
          }
 
     });

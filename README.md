@@ -124,3 +124,6 @@
   For marketing reasons we had to choose the api made by BMW. The big disadvantage of the 
   BMW api is that it is chargeable and we need an account. So that we can create this, we 
   need the UID, which we will only receive after consultation with our supervisor.
+
+## 26.07.2022
+- 
