@@ -143,7 +143,14 @@
   to get the import working. (Click on it and then click Alt+Enter, select the .json-File you
   want, done).
 - ERROR at initializing the API:
-  <br>Error: Request failed with status code 400
 
 ## 27.07.2022
-- Problembehandlung der API
+- Today we tried it again and unfortunately we got the same error as yesterday: 
+  <br> <b>Error: Request failed with status code 400</b>
+- After researching we found out that something has to be wrong with the url
+  they send in their version we downloaded, because in the internet 75 percent
+  of the people wrote that maybe the way the email has to be sent has changed.
+- After searching on GitHub we found something interesting:
+  <br> https://github.com/mihaiblaga89/bmw-connecteddrive-api/issues/200
+  <br> They noticed this issue back in November 2020 and fixed it.
+- Now we have to find out how we get the issue fixed version.
