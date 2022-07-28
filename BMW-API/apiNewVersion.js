@@ -1,10 +1,13 @@
 /* eslint-disable no-console */
 import API from '@mihaiblaga89/bmw-connecteddrive-api';
 
+const username = "aichhorn.stif@gmail.com";
+const password = "netfoX-roxxuc-3tabqi";
+
 await API.init({
     region: 'eu',
-    username: 'aichhorn.stif@gmail.com',
-    password: 'netfoX-roxxuc-3tabqi',
+    username: username,
+    password: password,
     debug: true,
 });
 

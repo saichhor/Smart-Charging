@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@mihaiblaga89/bmw-connecteddrive-api": "aaba4a3becaf5eeb244ad52d2d00ce6fd725bdb7",
+    "@mihaiblaga89/bmw-connecteddrive-api": "553994ad1a14a54765cc409f806eeb5cd53acd7c",
     "lxcommunicator": "^1.1.1",
     "node-fetch": "^2.6.7",
     "xhr2": "^0.2.1"
