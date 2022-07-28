@@ -154,3 +154,7 @@
   <br> https://github.com/mihaiblaga89/bmw-connecteddrive-api/issues/200
   <br> They noticed this issue back in November 2020 and fixed it.
 - Now we have to find out how we get the issue fixed version.
+
+##28.07.2022
+- We copied the whole package.json from GitHUB, but it also did not work.
+- 
