@@ -157,4 +157,9 @@
 
 ##28.07.2022
 - We copied the whole package.json from GitHUB, but it also did not work.
+
+##29.07.2022
+- The next day. We decided to search for new ways to get the BMW i remote API.
+- We found something interesting: https://smartcar.com/bmw/
+  <br> The only <b>PROBLEM</b> is that you have to pay for it.
 - 
