@@ -162,4 +162,14 @@
 - The next day. We decided to search for new ways to get the BMW i remote API.
 - We found something interesting: https://smartcar.com/bmw/
   <br> The only <b>PROBLEM</b> is that you have to pay for it.
+- We found something on:
+  <br> https://www.goingelectric.de/forum/viewtopic.php?t=21224&start=370
+  <br> Where the user "rs38" said:
+  <br> "Since 10.12. BMW has at least screwed on the APIs that the (old) 
+  IOS/Android apps used and nothing is like it was before.
+  Specifically, the base URL "https://b2vapi.bmwgroup.com/*" was changed 
+  to "https://myc-profile.bmwgroup.com/api/gateway/brs/*".".
+- So we did in the "index.js" file after searching for the old URL in all
+  project files. <b>We tried</b> it out and yeah we <b>got NOTHING back</b>
+  No failure no success it is just loading in a loop.
 - 
