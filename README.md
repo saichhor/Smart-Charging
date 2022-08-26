@@ -172,4 +172,28 @@
 - So we did in the "index.js" file after searching for the old URL in all
   project files. <b>We tried</b> it out and yeah we <b>got NOTHING back</b>
   No failure no success it is just loading in a loop.
+
+##26.08.2022
+- Again trying to fix the problem with the version of the GitHub version.
+- We tried to set the latest version from the "bmw-connecteddrive-api" which is
+  0.5.4.
+  <br> In this version they changed some things (we think versions) od their
+  dependencies.
+- To set it up and install the latest version via "nmp install" we tried to
+  set the link in the "package.json"
+  <br> From: "@mihaiblaga89/bmw-connecteddrive-api": "553994ad1a14a54765cc409f806eeb5cd53acd7c",
+  <br> To: "@mihaiblaga89/bmw-connecteddrive-api@0.5.4": "553994ad1a14a54765cc409f806eeb5cd53acd7c",
+- As ALWAYS it did not work so we think we did something wrong with implementing
+  the version.
+- The URL where we found that:<br>
+  https://github.com/mihaiblaga89/bmw-connecteddrive-api/pkgs/npm/bmw-connecteddrive-api/33221759
+- After reading it again we found out that we used the wrong implementation.
+- We HAD TO USE the "<> Install via package.json:" version so we changed the
+  third line in the "package.json":
+  <br> From: "@mihaiblaga89/bmw-connecteddrive-api": "553994ad1a14a54765cc409f806eeb5cd53acd7c"
+  <br> To: "@mihaiblaga89/bmw-connecteddrive-api": "0.5.4",
+- But that also did not work after installing it!
+- We also tried to install the latest version of the "lxcommunicator", 
+  "node-fetch" and "xhr2".
 - 
+
