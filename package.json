@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@mihaiblaga89/bmw-connecteddrive-api": "0.5.4",
+    "@smartcar/auth": "^2.9.0",
     "lxcommunicator": "^1.1.1",
     "node-fetch": "^3.2.10",
     "xhr2": "^0.2.1"

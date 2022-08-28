@@ -195,5 +195,21 @@
 - But that also did not work after installing it!
 - We also tried to install the latest version of the "lxcommunicator", 
   "node-fetch" and "xhr2".
-- 
 
+## 28.08.2022
+- We started <b>A NEW THING!</b>
+- We saw something interesting from "smartcar", the only problem is that
+  it is <b>NOT free!</b> but otherwise we can not finish our thesis.
+- To start the free trail we first have to go on their website: <br/>
+  https://smartcar.com/bmw/
+- There we have to go on the "Log in"-button and fill out the grids.
+- After finishing it we have to install the JavaScript SDK in the
+  "Terminal" in IntelliJ:
+  <br> <b>npm install @smartcar/auth</b>
+- First we had to clone the smartcar-sdk (in the Terminal) via:
+  <br> "git clone https://github.com/smartcar/getting-started-java-sdk.git"
+- Now we got a new folder called "getting-started-java-sdk"
+  (we had to setup a java version / e.g. 11.02)
+- The full Tutorial (of the "Setup"-Step) is on:
+  <br> https://smartcar.com/docs/tutorials/java/setup/#1-sign-up-for-a-smartcar-account
+- 
