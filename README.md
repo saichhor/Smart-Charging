@@ -126,7 +126,7 @@
   need the UID, which we will only receive after consultation with our supervisor.
 
 ## 26.07.2022
-- We startetd downloading the BMW-i-remote software from GitHub. Reason why we do not use the origina
+- We startetd downloading the BMW-i-remote software from GitHub. Reason why we do not use the original
   one from BMW is that you need to buy it and pay for it. The GitHub versions are free
   to use.
 - There are two versions:
@@ -212,4 +212,6 @@
   (we had to setup a java version / e.g. 11.02)
 - The full Tutorial (of the "Setup"-Step) is on:
   <br> https://smartcar.com/docs/tutorials/java/setup/#1-sign-up-for-a-smartcar-account
+
+## 29.08.2022
 - 
