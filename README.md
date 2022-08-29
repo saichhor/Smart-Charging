@@ -214,4 +214,8 @@
   <br> https://smartcar.com/docs/tutorials/java/setup/#1-sign-up-for-a-smartcar-account
 
 ## 29.08.2022
-- 
+- Found out that the tutorial is ONLY to explain what they do with the code
+  which is still in the "getting-started-java-sdk/app/src/main/java/Main.java".
+- We copied the folder and renamed it to "...-sdk-copiedVersion" to be able to
+  push it on GitHub.
+- Now we have to find out how to run this .java file.
