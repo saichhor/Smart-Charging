@@ -155,7 +155,7 @@
   <br> They noticed this issue back in November 2020 and fixed it.
 - Now we have to find out how we get the issue fixed version.
 
-##28.07.2022
+## 28.07.2022
 - We copied the whole package.json from GitHUB, but it also did not work.
 
 ##29.07.2022
@@ -173,7 +173,7 @@
   project files. <b>We tried</b> it out and yeah we <b>got NOTHING back</b>
   No failure no success it is just loading in a loop.
 
-##26.08.2022
+## 26.08.2022
 - Again trying to fix the problem with the version of the GitHub version.
 - We tried to set the latest version from the "bmw-connecteddrive-api" which is
   0.5.4.
@@ -220,7 +220,7 @@
   push it on GitHub.
 - Now we have to find out how to run this .java file.
 
-##06.09.2022
+## 06.09.2022
 - I started to make a new Java-Project with the same code because the code is planned
   for Java Projects.
 - I made the "setup"-tutorial on the "smartcar"-website and failed at the fourth point.
