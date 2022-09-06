@@ -219,3 +219,15 @@
 - We copied the folder and renamed it to "...-sdk-copiedVersion" to be able to
   push it on GitHub.
 - Now we have to find out how to run this .java file.
+
+##06.09.2022
+- I started to make a new Java-Project with the same code because the code is planned
+  for Java Projects.
+- I made the "setup"-tutorial on the "smartcar"-website and failed at the fourth point.
+  I got the error code: <b>Could not determine java version from '11.0.10'</b>
+  <br> So I had to fic that first.
+- I called mister Rathgeb and he helped me fixing the problem. The problem was that
+  there are two folders, two project in it and so the program could not know which
+  one it has to open. So we had to open e.g. the "app" folder and then it made the
+  .gradle build by itself. I only had to set up the jdk in my case the 11.02 version
+  and now it is set up correctly and we can work on it.
