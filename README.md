@@ -220,14 +220,47 @@
   push it on GitHub.
 - Now we have to find out how to run this .java file.
 
-##06.09.2022
+## 06.09.2022
 - I started to make a new Java-Project with the same code because the code is planned
   for Java Projects.
 - I made the "setup"-tutorial on the "smartcar"-website and failed at the fourth point.
   I got the error code: <b>Could not determine java version from '11.0.10'</b>
-  <br> So I had to fic that first.
+  <br> So I had to fix that first.
 - I called mister Rathgeb and he helped me fixing the problem. The problem was that
   there are two folders, two project in it and so the program could not know which
   one it has to open. So we had to open e.g. the "app" folder and then it made the
   .gradle build by itself. I only had to set up the jdk in my case the 11.02 version
   and now it is set up correctly and we can work on it.
+
+## 02.10.2022
+- Our team managed to get vehicle data with a node.js version of the
+  smartcar - projekt. Now our mission (mine because I have the Project) 
+  is to get the java-version running.
+- I opened the "App"-folder of the project and started following the 4.point
+  of the smartcar tutorial in which you have to export/set your client-id, 
+  your client-secret and the url in which you want to show the data.
+  <br> 1. "export SMARTCAR_CLIENT_ID=<your-client-id>"
+  <br> 2. "export SMARTCAR_CLIENT_SECRET=<your-client-secret>"
+  <br> 3. "export SMARTCAR_REDIRECT_URI=http://localhost:8000/exchange"
+  <br> <b>BE CAREFUL THE "EXPORT" - COMMAND IS FOR LINUX IN WINDOWS YOU HAVE
+  TO USE "SET"!!!</b>
+  <br> https://www.twilio.com/blog/working-with-environment-variables-in-java
+- Instead of the "set" commands I replaced the:
+  <br> From:
+  <br> AuthClient client = new AuthClient.Builder()
+  .redirectUri("http://localhost:8000/exchange")
+  .mode(mode)
+  .build();
+  <br> To:
+  <br> AuthClient client = new AuthClient.Builder()
+  .clientId("yourClientId")
+  .clientSecret("yourClientSecret")
+  .redirectUri("http://localhost:8000/exchange")
+  .mode(mode)
+  .build();
+- After selecting the brand of my vehicle under "http://localhost:8000/login"
+  and logging in at my "mybmw" - account I get a json opject of my bmw I configured.
+  (brand, model, ...).
+- <b>FOUND SOMETHING REALLY COOL!</b>
+  <br> Under: "https://smartcar.com/docs/api/?version=v2.0&language=Java#get-ev-battery-level"
+  <br> You can find any vehicle request you want and how to make it in e.g. Java!
