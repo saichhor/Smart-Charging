@@ -12,8 +12,8 @@ public class Main {
 
     port(8000);
 
-    String[] scope = {"required:read_vehicle_info", "required:read_odometer"};
-    String mode = "simulated";
+    String[] scope = {"required:read_vehicle_info", "read_battery", "read_charge"};
+    String mode = "test";
 
     AuthClient client = new AuthClient.Builder()
             .clientId("your-client-id")
@@ -68,6 +68,13 @@ public class Main {
       System.out.println(gson.toJson(charge));
 
 
+      ArrayList<Object> carInformations = new ArrayList<>();
+      carInformations.add(attributes);
+      carInformations.add(batteryCapacity);
+      carInformations.add(battery);
+      carInformations.add(charge);
+
+
       // {
       //   "id": "36ab27d0-fd9d-4455-823a-ce30af709ffc",
       //   "make": "TESLA",
@@ -76,7 +83,7 @@ public class Main {
       // }
 
       res.type("application/json");
-      return gson.toJson(attributes);
+      return gson.toJson(carInformations);
     });
   }
 }
