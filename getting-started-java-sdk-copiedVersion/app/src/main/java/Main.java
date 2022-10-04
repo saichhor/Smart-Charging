@@ -13,12 +13,14 @@ public class Main {
     port(8000);
 
     String[] scope = {"required:read_vehicle_info", "required:read_odometer"};
-    String mode = "test";
+    String mode = "simulated";
 
     AuthClient client = new AuthClient.Builder()
-      .redirectUri("http://localhost:8000/exchange")
-      .mode(mode)
-      .build();
+            .clientId("your-client-id")
+            .clientSecret("your-client-secret")
+            .redirectUri("http://localhost:8000/exchange")
+            .mode(mode)
+            .build();
 
     get("/login", (req, res) -> {
       String link = client.authUrlBuilder(scope).build();
@@ -48,6 +50,23 @@ public class Main {
 
       VehicleAttributes attributes = vehicle.attributes();
       System.out.println(gson.toJson(attributes));
+
+      /**
+       * For OUR-Project!
+       */
+
+      // Get the max battery volume in kwh!
+      VehicleBatteryCapacity batteryCapacity = vehicle.batteryCapacity();
+      System.out.println(gson.toJson(batteryCapacity));
+
+      // Get the current battery lvl!
+      VehicleBattery battery = vehicle.battery();
+      System.out.println(gson.toJson(battery));
+
+      // Get the charging status and information if it is plugged in currently!
+      VehicleCharge charge = vehicle.charge();
+      System.out.println(gson.toJson(charge));
+
 
       // {
       //   "id": "36ab27d0-fd9d-4455-823a-ce30af709ffc",

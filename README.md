@@ -264,3 +264,21 @@
 - <b>FOUND SOMETHING REALLY COOL!</b>
   <br> Under: "https://smartcar.com/docs/api/?version=v2.0&language=Java#get-ev-battery-level"
   <br> You can find any vehicle request you want and how to make it in e.g. Java!
+
+## 03.10.2022
+- Added some requests/variables and put them into a sout() command. 
+-     // Get the max battery volume in kwh!
+      VehicleBatteryCapacity batteryCapacity = vehicle.batteryCapacity();
+      System.out.println(gson.toJson(batteryCapacity));`
+
+      // Get the current battery lvl!
+      VehicleBattery battery = vehicle.battery();
+      System.out.println(gson.toJson(battery));
+
+      // Get the charging status and information if it is plugged in currently!
+      VehicleCharge charge = vehicle.charge();
+      System.out.println(gson.toJson(charge));
+- <b>Current! Problem:</b>
+  <br> Can't test it because the login of myBMW does not work on the
+  computer now. I do not know the reason because on the phone everything works.
+  <br> Maybe after a restart.
