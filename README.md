@@ -259,7 +259,7 @@
   .mode(mode)
   .build();
 - After selecting the brand of my vehicle under "http://localhost:8000/login"
-  and logging in at my "mybmw" - account I get a json opject of my bmw I configured.
+  and logging in at my "mybmw" - account I get a json object of my bmw I configured.
   (brand, model, ...).
 - <b>FOUND SOMETHING REALLY COOL!</b>
   <br> Under: "https://smartcar.com/docs/api/?version=v2.0&language=Java#get-ev-battery-level"
@@ -282,3 +282,23 @@
   <br> Can't test it because the login of myBMW does not work on the
   computer now. I do not know the reason because on the phone everything works.
   <br> Maybe after a restart.
+
+## 04.10.2022
+- Problem of yesterday solved!
+  <br> Just time in "String mode = "test";" at line 16.
+  <br> What does this make? It is like a demo account, you have to log in,
+  but it does not matter what email or password, and then you have to choose
+  what car you want to use for collecting the data.
+- Found an errors and the solution for it.
+  <br> The error was that did not change the permissions for the project.
+  A better example: I tried to load the battery level and some other things
+  but did not set the permission to read that data of the car from the account.
+- In the Code (Main.java):
+  <br> Line 15: String[] scope = {"required:read_vehicle_info", "read_battery", "read_charge"};
+  <br> In this line YOU HAVE TO! set what you are allowed to read from the vehicle.
+  <br> After that the permissions that were set were seen in te browser:
+  <br> <img alt="img.png" height="120" src="img.png" width="220"/>
+- Added an arraylist to the code which safes all the different objects.
+  <br> Why? We can turn several objects into a JSON-object which we
+  put out in the browser.
+  <br> We also do this in the console with some "sout()" commands.
