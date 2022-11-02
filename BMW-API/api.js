@@ -10,7 +10,6 @@ const response = await fetch('https://postman-echo.com/basic-auth',
         method: 'GET',
         headers: headers,
     });
-const data = await response.json();
-
+const data = await response.json()
 
 console.log(data);

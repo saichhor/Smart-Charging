@@ -302,3 +302,13 @@
   <br> Why? We can turn several objects into a JSON-object which we
   put out in the browser.
   <br> We also do this in the console with some "sout()" commands.
+
+## 02.11.2022
+- Problem with the country  solved!
+  <br> By adding a flag to the link you can set the country:
+  <br> client.authUrlBuilder(scope).**addFlag("country","AT")**.build()
+- Added environmental Variables for the AuthBuilder
+  <br> First you need to set them in your run Configuration
+  <br> Second with System.getenv("") you can get the Value of the Variable
+- In order to get that to Work you need to change the Gradle Build and run options to Itellij IDEA
+![img_1.png](img_1.png)
