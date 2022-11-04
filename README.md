@@ -323,6 +323,14 @@
 - After a bit of talking our internal supervisor suggested to
   delete the "build" package but also after trying this it did not work, so 
   we had to find out a new way to solve the problem.
+- Problem with the country  solved!
+  <br> By adding a flag to the link you can set the country:
+  <br> client.authUrlBuilder(scope).**addFlag("country","AT")**.build()
+- Added environmental Variables for the AuthBuilder
+  <br> First you need to set them in your run Configuration
+  <br> Second with System.getenv("") you can get the Value of the Variable
+- In order to get that to Work you need to change the Gradle Build and run options to Itellij IDEA
+  ![img_1.png](img_1.png)
 
 ## 04.11.2022
 - We finally found the problem the first thing we changed was the java language
@@ -334,13 +342,3 @@
   --> Gradle JVM" to "adopt-11"</b>
 - After coming home the first thing to do is to start the server and watch
   if the battery level was correctly set in the Loxone-App.
-
-## 02.11.2022
-- Problem with the country  solved!
-  <br> By adding a flag to the link you can set the country:
-  <br> client.authUrlBuilder(scope).**addFlag("country","AT")**.build()
-- Added environmental Variables for the AuthBuilder
-  <br> First you need to set them in your run Configuration
-  <br> Second with System.getenv("") you can get the Value of the Variable
-- In order to get that to Work you need to change the Gradle Build and run options to Itellij IDEA
-![img_1.png](img_1.png)
