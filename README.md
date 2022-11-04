@@ -302,3 +302,35 @@
   <br> Why? We can turn several objects into a JSON-object which we
   put out in the browser.
   <br> We also do this in the console with some "sout()" commands.
+
+## 30.10.2022
+- A few days and weeks ago trying to make a HttpsRequest-Program which is
+  running on JAVA was the main goal. The reason for this is that our connection to the car 
+  runs on JAVA, and now we need to talk to the server on JAVA, so we can combine
+  these two in one programm which asks the car for battery percentage and sends
+  that value to the server which sets it in the Loxone-App. We tried this a few
+  weeks ago, but noticed that the "HttpRequest"-object does not work in JAVA.
+  <br> So the goal is to figure this out and test run it on the miniserver
+  which I had to re register for DNS-Cloud-communication (communication over
+  https-links e.g.).
+- First the error told me to set the java-language-lvl up to 11. After
+  setting the sdk on level 11 nothing really changed. A new error apperared
+  telling <b>"cannot find symbol HttpRequest"</b>.
+- After searching and not finding anything about how to solve such a type
+  of error there was no way other way then asking our internal supervisor.
+
+## 02.11.2022
+- After a bit of talking our internal supervisor suggested to
+  delete the "build" package but also after trying this it did not work, so 
+  we had to find out a new way to solve the problem.
+
+## 04.11.2022
+- We finally found the problem the first thing we changed was the java language
+  level in the <b>"Project Structure"-settings to 11.</b>
+  <br>Then the second thing we changed was the Gradle-version in the 
+  <b>"gradle-wrapper.properties" from 4.3 to 4.8</b> in the first code line. 
+  <br> The last thing we had to change was in the
+  <b>"Settings --> Build, Exectution, Deployment --> Build Tools --> Gradle --> app
+  --> Gradle JVM" to "adopt-11"</b>
+- After coming home the first thing to do is to start the server and watch
+  if the battery level was correctly set in the Loxone-App.
