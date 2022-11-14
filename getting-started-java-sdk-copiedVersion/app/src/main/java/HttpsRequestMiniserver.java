@@ -18,6 +18,11 @@ public class HttpsRequestMiniserver {
                 .uri(new URI("https://dns.loxonecloud.com/504F94A0EC9E/jdev/sps/io/Akkustand/" + value.toString()))
                 .header("Authorization", getBasicAuthenticationHeader(userName, passWord))
                 .build();
+
+        client.sendAsync(request, HttpResponse.BodyHandlers.ofString())
+                .thenApply(HttpResponse::headers)
+                .thenAccept(System.out::println)
+                .join();
     }
 
     public static void main(String[] args) throws URISyntaxException {

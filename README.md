@@ -342,3 +342,14 @@
   --> Gradle JVM" to "adopt-11"</b>
 - After coming home the first thing to do is to start the server and watch
   if the battery level was correctly set in the Loxone-App.
+
+## 14.11.2022
+- After asking our internal supervisor again he found out, that I build a
+  request but never sent it with a client. SO we added that to the end
+  of the setBatteryLevel()-function. I tested it today and found something
+  out. I do not know why he is doing this.
+- Looked at the code again and changed it that I got the header 
+  returned after the run, and it gave me a link back. The strange thing: 
+  <br> It does not set the value from the program itself. Only when I then 
+  copied the link from the run, pasted it into the browser and logged in 
+  it sent the value and also set it in the app.
