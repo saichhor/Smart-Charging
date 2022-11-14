@@ -353,3 +353,15 @@
   <br> It does not set the value from the program itself. Only when I then 
   copied the link from the run, pasted it into the browser and logged in 
   it sent the value and also set it in the app.
+- <b>IMPORTANT!</b>
+  <br> I changed the code how I send the request but that was <b>not</b> the
+  problem.
+  <br> The problem stud in the response.headers().
+  They <b>changed the url</b> to send the request
+  <br> <b>From: https://dns.loxonecloud.com/504F94A0EC9E/jdev/sps/io/Akkustand/
+  <br> To: https://195-201-222-243.504F94A0EC9E.dyndns.loxonecloud.com:28313/jdev/sps/io/Akkustand/
+  </b>
+- Now it sets the value in the Loxone-app! Solved!
+- Now we need to send the value which we get from the car to the server.
+  <br> So we have to put the value into a string and call the funktion
+  to send the request.
