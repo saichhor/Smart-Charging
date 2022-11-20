@@ -69,6 +69,13 @@ public class Main {
       VehicleBattery battery = vehicle.battery();
       System.out.println(gson.toJson(battery));
 
+      // Sending the batterypercentage to the Loxone-App
+      String batteryPercentageDoubleToString = Double.toString(battery.getPercentRemaining());
+      String batteryPercentage = batteryPercentageDoubleToString.replace(".", "");
+      String batteryPercentageAsInt = batteryPercentage.replace("0", "");
+      HttpsRequestMiniserver httpsRequestMiniserver = new HttpsRequestMiniserver();
+      httpsRequestMiniserver.setBatteryLevel(Integer.parseInt(batteryPercentageAsInt));
+
       // Get the charging status and information if it is plugged in currently!
       VehicleCharge charge = vehicle.charge();
       System.out.println(gson.toJson(charge));

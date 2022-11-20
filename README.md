@@ -365,3 +365,14 @@
 - Now we need to send the value which we get from the car to the server.
   <br> So we have to put the value into a string and call the funktion
   to send the request.
+
+## 20.11.2022
+- ![img_3.png](img_3.png)
+  <br><img alt="img_2.png" height="350" src="img_2.png" width="150"/>
+- <b>IT WORKS!!!</b>
+- Problem:
+  <br> The Miniserver changes its connection IP and his cloud.dns port-number!
+  <br> <b> This causes big problems and as a result of that big errors! </b>
+- Added some code in the Main.java. It is not beautiful how I parse the double
+  value of the batterypercentage into a string and from that to an integer.
+  <br> But it works.
