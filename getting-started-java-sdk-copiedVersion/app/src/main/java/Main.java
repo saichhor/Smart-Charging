@@ -71,8 +71,16 @@ public class Main {
 
       // Sending the batterypercentage to the Loxone-App
       String batteryPercentageDoubleToString = Double.toString(battery.getPercentRemaining());
-      String batteryPercentage = batteryPercentageDoubleToString.replace(".", "");
-      String batteryPercentageAsInt = batteryPercentage.replace("0", "");
+      String batteryPercentageAsInt =  "";
+
+      if (batteryPercentageDoubleToString.contains("0.0")) {
+        batteryPercentageAsInt = batteryPercentageDoubleToString.replace("0.0", "");
+      } else if (batteryPercentageDoubleToString.contains("0.")) {
+        batteryPercentageAsInt = batteryPercentageDoubleToString.replace("0.", "");
+      } else {
+        batteryPercentageAsInt = batteryPercentageDoubleToString;
+      }
+
       HttpsRequestMiniserver httpsRequestMiniserver = new HttpsRequestMiniserver();
       httpsRequestMiniserver.setBatteryLevel(Integer.parseInt(batteryPercentageAsInt));
 
