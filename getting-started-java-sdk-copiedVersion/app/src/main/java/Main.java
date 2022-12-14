@@ -22,8 +22,8 @@ public class Main {
     String mode = "test";
 
     AuthClient client = new AuthClient.Builder()
-            .clientId(System.getenv("SMARTCAR_CLIENT_ID"))
-            .clientSecret(System.getenv("SMARTCAR_CLIENT_SECRET"))
+            .clientId("*CLIENTID*")
+            .clientSecret("*CLIENTSECRET*")
             .redirectUri("http://localhost:8000/exchange")
             .mode(mode)
             .build();
