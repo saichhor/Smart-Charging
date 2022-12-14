@@ -24,30 +24,27 @@ public class HttpsRequestMiniserver {
                 .header("Authorization", getBasicAuthenticationHeader(userName, passWord))
                 .build();
 
-        HttpResponse<String> response = null;
-
-        HttpResponse<String> response2 = null;
+        HttpResponse<String> responseToGetNewUrl = null;
+        HttpResponse<String> responseToSetValue = null;
 
         try {
-            response = client.send(request, HttpResponse.BodyHandlers.ofString());
-
-            System.out.println(response.headers().map().get("location"));
+            responseToGetNewUrl = client.send(request, HttpResponse.BodyHandlers.ofString());
 
             HttpRequest request2 = HttpRequest.newBuilder()
                     .GET()
-                    .uri(new URI(response.headers().map().get("location").get(0)))
+                    .uri(new URI(responseToGetNewUrl.headers().map().get("location").get(0)))
                     .header("Authorization", getBasicAuthenticationHeader(userName, passWord))
                     .build();
 
-            response2 = client.send(request2, HttpResponse.BodyHandlers.ofString());
+            responseToSetValue = client.send(request2, HttpResponse.BodyHandlers.ofString());
 
         } catch (IOException | InterruptedException e) {
             throw new RuntimeException(e);
         }
 
-        System.out.println(response2.statusCode());
-        System.out.println(response2.headers());
-        System.out.println(response2.body());
+        System.out.println(responseToSetValue.statusCode());
+        System.out.println(responseToSetValue.headers());
+        System.out.println(responseToSetValue.body());
     }
 
     public static void main(String[] args) throws URISyntaxException {
