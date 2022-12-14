@@ -20,21 +20,34 @@ public class HttpsRequestMiniserver {
 
         HttpRequest request = HttpRequest.newBuilder()
                 .GET()
-                .uri(new URI("https://168-119-185-175.504F94A0EC9E.dyndns.loxonecloud.com:20948/jdev/sps/io/Akkustand/" + value.toString()))
+                .uri(new URI("http://dns.loxonecloud.com/504f94a03fde/jdev/sps/io/Akkustand/" + value.toString()))
                 .header("Authorization", getBasicAuthenticationHeader(userName, passWord))
                 .build();
 
         HttpResponse<String> response = null;
 
+        HttpResponse<String> response2 = null;
+
         try {
             response = client.send(request, HttpResponse.BodyHandlers.ofString());
+
+            System.out.println(response.headers().map().get("location"));
+
+            HttpRequest request2 = HttpRequest.newBuilder()
+                    .GET()
+                    .uri(new URI(response.headers().map().get("location").get(0)))
+                    .header("Authorization", getBasicAuthenticationHeader(userName, passWord))
+                    .build();
+
+            response2 = client.send(request2, HttpResponse.BodyHandlers.ofString());
+
         } catch (IOException | InterruptedException e) {
             throw new RuntimeException(e);
         }
 
-        System.out.println(response.statusCode());
-        System.out.println(response.headers());
-        System.out.println(response.body());
+        System.out.println(response2.statusCode());
+        System.out.println(response2.headers());
+        System.out.println(response2.body());
     }
 
     public static void main(String[] args) throws URISyntaxException {

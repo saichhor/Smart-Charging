@@ -1,10 +1,13 @@
-import static spark.Spark.*;
 import com.google.gson.Gson;
-import com.smartcar.sdk.*;
+import com.smartcar.sdk.AuthClient;
+import com.smartcar.sdk.Smartcar;
+import com.smartcar.sdk.Vehicle;
 import com.smartcar.sdk.data.*;
 
 import java.util.ArrayList;
-import java.util.List;
+
+import static spark.Spark.get;
+import static spark.Spark.port;
 
 public class Main {
   // global variable to save our accessToken
@@ -19,8 +22,8 @@ public class Main {
     String mode = "test";
 
     AuthClient client = new AuthClient.Builder()
-            .clientId("ebc4970b-ff01-491c-a4ae-4e9f3fe0c80d")
-            .clientSecret("aa6e1b72-90fd-43dc-b177-4735572d8591")
+            .clientId(System.getenv("SMARTCAR_CLIENT_ID"))
+            .clientSecret(System.getenv("SMARTCAR_CLIENT_SECRET"))
             .redirectUri("http://localhost:8000/exchange")
             .mode(mode)
             .build();
