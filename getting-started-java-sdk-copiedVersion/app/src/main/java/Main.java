@@ -1,13 +1,10 @@
+import static spark.Spark.*;
 import com.google.gson.Gson;
-import com.smartcar.sdk.AuthClient;
-import com.smartcar.sdk.Smartcar;
-import com.smartcar.sdk.Vehicle;
+import com.smartcar.sdk.*;
 import com.smartcar.sdk.data.*;
 
 import java.util.ArrayList;
-
-import static spark.Spark.get;
-import static spark.Spark.port;
+import java.util.List;
 
 public class Main {
   // global variable to save our accessToken
@@ -18,17 +15,17 @@ public class Main {
 
     port(8000);
 
+    String[] scope = {"required:read_vehicle_info", "read_battery", "read_charge"};
     String mode = "test";
 
     AuthClient client = new AuthClient.Builder()
-            .clientId(System.getenv("SMARTCAR_CLIENT_ID"))
-            .clientSecret(System.getenv("SMARTCAR_CLIENT_SECRET"))
-            .redirectUri(System.getenv("SMARTCAR_REDIRECT_URI"))
+            .clientId("ebc4970b-ff01-491c-a4ae-4e9f3fe0c80d")
+            .clientSecret("aa6e1b72-90fd-43dc-b177-4735572d8591")
+            .redirectUri("http://localhost:8000/exchange")
             .mode(mode)
             .build();
 
     get("/login", (req, res) -> {
-      String[] scope = {"required:read_vehicle_info", "read_battery", "read_charge"};
       String link = client.authUrlBuilder(scope).addFlag("country","AT").build();
       res.redirect(link);
       return null;

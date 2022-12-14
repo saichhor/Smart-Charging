@@ -7,12 +7,12 @@ import java.net.http.HttpResponse;
 import java.util.Base64;
 
 public class HttpsRequestMiniserver {
-    private static String getBasicAuthenticationHeader(String username, String password) {
+    private String getBasicAuthenticationHeader(String username, String password) {
         String valueToEncode = username + ":" + password;
         return "Basic " + Base64.getEncoder().encodeToString(valueToEncode.getBytes());
     }
 
-    public static void setBatteryLevel(Integer value) throws URISyntaxException {
+    public void setBatteryLevel(Integer value) throws URISyntaxException {
         String userName = "Experte";
         String passWord = "Experte1234";
 
@@ -20,7 +20,7 @@ public class HttpsRequestMiniserver {
 
         HttpRequest request = HttpRequest.newBuilder()
                 .GET()
-                .uri(new URI("https://195-201-222-243.504F94A0EC9E.dyndns.loxonecloud.com:28313/jdev/sps/io/Akkustand/" + value.toString()))
+                .uri(new URI("https://168-119-185-175.504F94A0EC9E.dyndns.loxonecloud.com:20948/jdev/sps/io/Akkustand/" + value.toString()))
                 .header("Authorization", getBasicAuthenticationHeader(userName, passWord))
                 .build();
 
@@ -38,6 +38,6 @@ public class HttpsRequestMiniserver {
     }
 
     public static void main(String[] args) throws URISyntaxException {
-        setBatteryLevel(75);
+        //setBatteryLevel(75);
     }
 }
