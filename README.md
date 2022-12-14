@@ -377,4 +377,12 @@
   value of the batterypercentage into a string and from that to an integer.
   <br> But it works.
 
-
+## 14.12.2022
+- For the final touch Stefan came up with the idea to first send the https-request
+  to safe the new URL (with the new CloudDNS-IP and the CloudDNS Port) and 
+  creating a new URL with it to send the *"new"*, correct one to the server.
+- Now we only have to give the program the serial number of our Miniserver
+  and it will send the correct link to the server with the value we get from
+  our car.
+- <b>You still have to log in on smartcar but the way it creates the URL and
+  sends it is now automated.</b>
