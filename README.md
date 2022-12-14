@@ -376,3 +376,5 @@
 - Added some code in the Main.java. It is not beautiful how I parse the double
   value of the batterypercentage into a string and from that to an integer.
   <br> But it works.
+
+

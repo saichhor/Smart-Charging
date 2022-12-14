@@ -20,7 +20,7 @@ public class HttpsRequestMiniserver {
 
         HttpRequest request = HttpRequest.newBuilder()
                 .GET()
-                .uri(new URI("http://dns.loxonecloud.com/*SERIENNUMMER*/jdev/sps/io/Akkustand/" + value.toString()))
+                .uri(new URI("https://dns.loxonecloud.com/*SERIENNUMMER*/jdev/sps/io/Akkustand/" + value.toString()))
                 .header("Authorization", getBasicAuthenticationHeader(userName, passWord))
                 .build();
 
