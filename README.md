@@ -35,7 +35,7 @@
 - We made a new site in the Loxone-Config and added a digital input that we named "Akkustand"
   <br /> which shows the percentage of the battery as a slider.
 - We made a new folder named "communicationWithServer" in which we (task we have to
-  do today or tomorrow) send a HTTPS-Request, as shown above, to the digital input
+  do today or tomorrow) send an HTTPS-Request, as shown above, to the digital input
   to set his value.
 
 ## 19.07.2022
@@ -330,7 +330,7 @@
   <br> First you need to set them in your run Configuration
   <br> Second with System.getenv("") you can get the Value of the Variable
 - In order to get that to Work you need to change the Gradle Build and run options to Itellij IDEA
-  ![img_1.png](img_1.png)
+  ![img_1.png](ressourcen/img_1.png)
 
 ## 04.11.2022
 - We finally found the problem the first thing we changed was the java language
@@ -367,7 +367,7 @@
   to send the request.
 
 ## 20.11.2022
-- ![img_3.png](img_3.png)
+- ![img_3.png](ressourcen/img_3.png)
   <br><img alt="img_2.png" height="350" src="img_2.png" width="150"/>
 - <b>IT WORKS!!!</b>
 - Problem:
