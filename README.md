@@ -67,7 +67,7 @@
   Meanwhile Mr. Aichhorn tried to implement some methods with which you can run a c++ application.
   He tried so many things but at the end it does not work. He spoke with our internal supervisor
   and now we can make it in Java. For the communication with the server, in Java, we made a new project
-  loaded our old one from GitHub und made a new folder called "communicationWithServerJAVAVersion"
+  loaded our old one from GitHub und made a new folder called "communicationWith_Mini_Server"
   in which we send a https-request to the server. We are also trying to send our login values
   within the url so we do not have to login manually anymore.
 - Current status <b>NOW</b> httpsRequest.js puts out a html report.
@@ -96,7 +96,7 @@
 ## 25.07.2022
 - We updated the project into our Clion folder. To run the Java-Version there you
   have to go into the terminal and download the "xhr2"-package with "npm install xhr2"
-  now you have to go into the Java-version folder with "cd communicationWithServerJAVAVersion".
+  now you have to go into the Java-version folder with "cd communicationWith_Mini_Server".
   <br> --> now you can run it with "node httpsRequest.js".
 - We started to implement the BMW CarData into our program to see if we can load
   the data from a test vehicle from BMW.
